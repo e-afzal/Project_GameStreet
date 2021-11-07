@@ -3,6 +3,7 @@ import express from "express";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import colors from "colors";
+import path from "path";
 
 // ROUTES IMPORT
 import productRoutes from "./routes/productRoutes.js";

@@ -1,0 +1,115 @@
+section#signup {
+  padding-inline: clamp(2rem, 5vw, 7rem);
+}
+section#signup .signup-left {
+  width: 35vw;
+}
+section#signup .signup-left h2.signup-title {
+  margin-bottom: 15px;
+  color: #d7d8d7;
+}
+section#signup .signup-left form.form-group {
+  width: inherit;
+}
+section#signup .signup-left form.form-group input {
+  background-color: #0d0d0d;
+  color: #b4b4b4;
+  margin-bottom: 25px;
+}
+section#signup .signup-left form.form-group input#email,
+section#signup .signup-left form.form-group input#number {
+  display: block;
+  width: 100%;
+}
+section#signup .signup-left form.form-group input#fName,
+section#signup .signup-left form.form-group input#lName,
+section#signup .signup-left form.form-group input#password,
+section#signup .signup-left form.form-group input#confirmPassword {
+  display: inline-block;
+}
+section#signup .signup-left form.form-group input#fName,
+section#signup .signup-left form.form-group input#password {
+  margin-right: 9%;
+  width: 45%;
+}
+section#signup .signup-left form.form-group input#lName,
+section#signup .signup-left form.form-group input#confirmPassword {
+  width: 45%;
+}
+section#signup .signup-left form.form-group button {
+  width: 100%;
+  background-color: #20b830;
+  border: none;
+  text-transform: uppercase;
+  margin-block: 1.5rem 1.2rem;
+}
+section#signup .signup-left form.form-group button:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(32, 184, 48, 0.25);
+}
+section#signup .signup-left h5 {
+  text-align: center;
+}
+section#signup .signup-left h5 a {
+  color: #5e5e5e;
+  font-size: 13.5px;
+  font-family: "FiraSans-Light", sans-serif;
+  text-decoration: underline;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+  section#signup .signup-left {
+    width: 50vw;
+    margin-inline: auto;
+  }
+  section#signup .signup-left h2.signup-title {
+    text-align: center;
+  }
+  section#signup .signup-left form.form-group input#fName,
+  section#signup .signup-left form.form-group input#lName,
+  section#signup .signup-left form.form-group input#password,
+  section#signup .signup-left form.form-group input#confirmPassword {
+    display: block;
+    width: 100%;
+  }
+  section#signup .signup-left form.form-group input#fname,
+  section#signup .signup-left form.form-group input#password {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section#signup .signup-left {
+    width: 100%;
+  }
+  section#signup .signup-left form.form-group {
+    width: 50vw;
+    margin-inline: auto;
+  }
+  section#signup .signup-left form.form-group input#fName,
+  section#signup .signup-left form.form-group input#lName,
+  section#signup .signup-left form.form-group input#email,
+  section#signup .signup-left form.form-group input#number,
+  section#signup .signup-left form.form-group input#password,
+  section#signup .signup-left form.form-group input#confirmPassword,
+  section#signup .signup-left form.form-group button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  section#signup .signup-left form.form-group {
+    width: 70vw;
+    margin-inline: auto;
+  }
+  section#signup .signup-left form.form-group input#fName,
+  section#signup .signup-left form.form-group input#lName,
+  section#signup .signup-left form.form-group input#email,
+  section#signup .signup-left form.form-group input#number,
+  section#signup .signup-left form.form-group input#password,
+  section#signup .signup-left form.form-group input#confirmPassword,
+  section#signup .signup-left form.form-group button {
+    width: 100%;
+  }
+}

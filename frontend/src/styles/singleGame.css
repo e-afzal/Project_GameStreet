@@ -1,0 +1,158 @@
+section#game-content {
+  padding-inline: clamp(2rem, 5vw, 7rem);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section#game-content p {
+  text-align: left;
+}
+section#game-content .game-details .game-brief {
+  width: clamp(60%, 29vw, 65%);
+  margin-bottom: 10rem;
+}
+section#game-content .game-details .game-brief hr {
+  margin-block: clamp(1rem, 3vw, 3rem);
+  color: #151515;
+}
+section#game-content .game-details .game-brief h5.game-publisher {
+  color: #b4b4b4;
+  font-family: "FiraSans-Medium";
+  margin-block: 1rem;
+}
+section#game-content .game-details .game-brief h4.game-price {
+  color: #20b830;
+}
+section#game-content .game-details .game-brief form.cart-form h5 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.45rem, 2vw, 1.7rem);
+}
+section#game-content
+  .game-details
+  .game-brief
+  form.cart-form
+  div.form-group:nth-child(2)
+  > label:nth-child(4) {
+  margin-left: 3rem;
+}
+section#game-content .game-details .game-brief form.cart-form .form-group {
+  display: flex;
+}
+section#game-content
+  .game-details
+  .game-brief
+  form.cart-form
+  .form-group
+  label {
+  font-size: clamp(1.35rem, 1.5vw, 1.6rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  width: 9.5rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+div.form-group:nth-child(3) > label:nth-child(4) {
+  margin-left: 2.5rem;
+}
+
+section#game-content
+  .game-details
+  .game-brief
+  form.cart-form
+  .form-group
+  input[type="radio"] {
+  display: none;
+}
+section#game-content
+  .game-details
+  .game-brief
+  form.cart-form
+  .form-group
+  input[type="radio"]:checked
+  + label {
+  background-color: #fff;
+  color: #151515;
+  box-shadow: 0 7px 45px rgba(255, 255, 255, 0.15);
+}
+section#game-content .game-details .game-brief form.cart-form button {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #20b830;
+  border: none;
+  text-transform: uppercase;
+}
+section#game-content .game-details .game-brief form.cart-form button:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(32, 184, 48, 0.25);
+}
+section#game-content
+  .game-details
+  .game-brief
+  form.cart-form
+  button:disabled:hover {
+  box-shadow: 0px 0px 45px rgba(220, 20, 60, 0.25);
+}
+section#game-content .game-details .about-game p.about-description {
+  color: #b4b4b4;
+  margin-top: 5px;
+}
+section#game-content .game-details .about-game .about-grid-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  margin-top: 5px;
+}
+section#game-content
+  .game-details
+  .about-game
+  .about-grid-details
+  .about-grid-detail
+  :nth-child(1) {
+  font-family: "FiraSans-Medium";
+}
+section#game-content
+  .game-details
+  .about-game
+  .about-grid-details
+  .about-grid-detail
+  :nth-child(2) {
+  color: #a8a8a8;
+  margin-top: 0px;
+  text-align: left;
+}
+
+section#game-content .game-gallery {
+  overflow: hidden;
+}
+
+section#game-content .game-gallery h1 {
+  margin-bottom: 1.5rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  section#game-content {
+    grid-template-columns: 1fr;
+  }
+  section#game-content .game-details {
+    order: 2;
+    margin-top: 2rem;
+  }
+  section#game-content .game-gallery {
+    order: 1;
+  }
+  section#game-content .game-gallery h1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section#game-content .game-details .game-brief {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+}

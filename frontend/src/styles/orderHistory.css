@@ -1,0 +1,244 @@
+section#dashboard-orderHistory {
+  padding-inline: clamp(2rem, 5vw, 7rem);
+}
+section#dashboard-orderHistory .dashboard-grid {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  min-height: 50rem;
+}
+section#dashboard-orderHistory .dashboard-grid .left-pane {
+  padding-left: 4rem;
+  padding-block: 3rem;
+  /* background-image: linear-gradient(145deg, #7dd56f 45%, #28b487); */
+  border: 2px dashed #202020;
+  border-right: none;
+}
+section#dashboard-orderHistory .dashboard-grid .left-pane .fixed-container {
+  position: sticky;
+  top: 3rem;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .left-pane
+  .fixed-container
+  .account-settings
+  h4.account-settings-title {
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  font-size: 17px;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .left-pane
+  .fixed-container
+  .account-settings
+  ul.account-group {
+  margin-block: 0.5rem 4.5rem;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .left-pane
+  .fixed-container
+  .account-settings
+  ul.account-group
+  li {
+  margin-left: 1rem;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .left-pane
+  .fixed-container
+  .account-settings
+  ul.account-group
+  li
+  a {
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .left-pane
+  .fixed-container
+  .my-orders
+  h4.my-orders-title {
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  font-size: 17px;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .left-pane
+  .fixed-container
+  .my-orders
+  a {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: inline-block;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 14.5px;
+}
+section#dashboard-orderHistory .dashboard-grid .right-pane {
+  padding-block: 3rem;
+  /* background-color: #fff; */
+  border: 2px dashed #202020;
+}
+section#dashboard-orderHistory .dashboard-grid .right-pane .order-history {
+  padding-inline: 4rem;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .right-pane
+  .order-history
+  h3.order-history-title {
+  margin-bottom: 2rem;
+  background-image: linear-gradient(90deg, #7dd56f 45%, #28b487);
+  background-clip: text;
+  color: transparent;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .right-pane
+  .order-history
+  table.history-table {
+  border-collapse: collapse;
+  margin-block: 2.5rem;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .right-pane
+  .order-history
+  table.history-table
+  th,
+section#dashboard-orderHistory
+  .dashboard-grid
+  .right-pane
+  .order-history
+  table.history-table
+  td {
+  padding: 1.2rem 1.5rem;
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .right-pane
+  .order-history
+  table.history-table
+  thead
+  tr {
+  /* background-color: #0d0d0d; */
+  background-color: #fff;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .right-pane
+  .order-history
+  table.history-table
+  thead
+  tr
+  th {
+  /* color: #fff; */
+  color: #151515;
+  font-family: "FiraSans-Medium";
+  font-weight: 100;
+  text-align: center;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .right-pane
+  .order-history
+  table.history-table
+  tbody
+  tr {
+  /* border-bottom: 1px solid #ddd; */
+  border-bottom: 1px solid #fff;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .right-pane
+  .order-history
+  table.history-table
+  tbody
+  tr
+  td {
+  /* color: #151515; */
+  color: #fff;
+  text-align: center;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .right-pane
+  .order-history
+  table.history-table
+  tbody
+  tr
+  td
+  a {
+  /* color: #151515; */
+  color: #fff;
+}
+section#dashboard-orderHistory
+  .dashboard-grid
+  .right-pane
+  .order-history
+  table.history-table
+  tbody
+  tr:last-of-type {
+  /* border-bottom: 2px solid #151515; */
+  border-bottom: 1px solid #fff;
+}
+section#dashboard-orderHistory .dashboard-grid .right-pane hr {
+  margin-block: 6.5rem;
+  color: rgba(112, 112, 112, 0.35);
+}
+
+@media screen and (max-width: 900px) {
+  section#dashboard-orderHistory .dashboard-grid .left-pane {
+    padding-left: 2.2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#dashboard-orderHistory {
+    padding: 0;
+  }
+  section#dashboard-orderHistory .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  section#dashboard-orderHistory .dashboard-grid .left-pane {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  section#dashboard-orderHistory .dashboard-grid {
+    margin-inline: auto;
+  }
+  section#dashboard-orderHistory .dashboard-grid .right-pane #order-history {
+    padding-inline: clamp(1rem, 3vw, 1.5rem);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  section#dashboard-orderHistory .dashboard-grid {
+    margin-inline: auto;
+  }
+  section#dashboard-orderHistory
+    .dashboard-grid
+    .right-pane
+    #order-history
+    table.history-table
+    th,
+  section#dashboard-orderHistory
+    .dashboard-grid
+    .right-pane
+    #order-history
+    table.history-table
+    td {
+    padding: 1.3rem 1rem;
+  }
+}

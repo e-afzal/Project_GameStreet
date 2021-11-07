@@ -1,0 +1,69 @@
+/* CONTAINER STYLES */
+#main .swiper-container {
+  width: 100%;
+  /* width: 31.5rem; */
+}
+
+.swiper-slide {
+  /* width: inherit; */
+}
+
+#main .swiper-slide img.singleGameImg {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* SLIDER STYLES */
+#main .swiper-button-prev,
+#main .swiper-button-next {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  display: none;
+}
+
+/* THUMBNAIL STYLES */
+#thumbs.gameThumbs {
+  margin-top: clamp(1rem, 1vw, 2rem);
+  display: block;
+}
+
+#thumbs.gameThumbs .swiper-slide {
+  filter: brightness(60%);
+  /* opacity: 0.7; */
+  transition: all 0.4s;
+}
+
+#thumbs.gameThumbs .swiper-slide img.gameThumbsImg {
+  width: 100%;
+}
+
+#thumbs.gameThumbs .swiper-slide-thumb-active {
+  /* opacity: 1; */
+  filter: brightness(100%);
+}
+
+@media screen and (max-width: 768px) {
+  /* CONTAINER STYLES */
+  #main {
+    width: 100%;
+    margin-left: 0px;
+  }
+  /* .swiper-slide {
+    width: inherit;
+  }
+
+  .swiper-slide img {
+    height: 100%;
+    object-fit: contain;
+  } */
+}
+
+@media screen and (max-width: 500px) {
+  /* CONTAINER STYLES */
+  #main {
+    /* height: 75%; */
+  }
+  #main .swiper-slide img.singleGameImg {
+    width: 100%;
+  }
+}

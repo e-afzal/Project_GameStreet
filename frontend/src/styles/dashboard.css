@@ -1,0 +1,448 @@
+section#dashboard {
+  padding-inline: clamp(2rem, 5vw, 7rem);
+}
+section#dashboard .dashboard-grid {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+section#dashboard .dashboard-grid .left-pane {
+  padding-left: 4rem;
+  padding-block: 3rem;
+  /* background-image: linear-gradient(145deg, #7dd56f 45%, #28b487); */
+  border: 2px dashed #202020;
+  border-right: 0;
+}
+section#dashboard .dashboard-grid .left-pane .fixed-container {
+  position: sticky;
+  top: 3rem;
+}
+section#dashboard
+  .dashboard-grid
+  .left-pane
+  .fixed-container
+  .account-settings
+  h4.account-settings-title {
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  font-size: 17px;
+}
+section#dashboard
+  .dashboard-grid
+  .left-pane
+  .fixed-container
+  .account-settings
+  ul.account-group {
+  margin-block: 0.5rem 4.5rem;
+}
+section#dashboard
+  .dashboard-grid
+  .left-pane
+  .fixed-container
+  .account-settings
+  ul.account-group
+  li {
+  margin-left: 1rem;
+}
+section#dashboard
+  .dashboard-grid
+  .left-pane
+  .fixed-container
+  .account-settings
+  ul.account-group
+  li
+  a {
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+section#dashboard
+  .dashboard-grid
+  .left-pane
+  .fixed-container
+  .my-orders
+  h4.my-orders-title {
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  font-size: 17px;
+}
+section#dashboard .dashboard-grid .left-pane .fixed-container .my-orders a {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: inline-block;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 14.5px;
+}
+section#dashboard .dashboard-grid .right-pane {
+  padding-block: 3rem;
+  /* background-color: #fff; */
+  border: 2px dashed #202020;
+}
+section#dashboard .dashboard-grid .right-pane input {
+  background-color: #202020;
+}
+section#dashboard .dashboard-grid .right-pane select {
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 1.5rem;
+  /* color: #262626; */
+  /* background-color: #f2f2f2; */
+  color: #bbb;
+  background-color: #202020;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 8px 9px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="%2331343a;"  /></svg>');
+  background-position: right 5px top 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 30px;
+}
+section#dashboard .dashboard-grid .right-pane select:focus {
+  border: 1px solid #262626;
+  outline: none;
+}
+section#dashboard .dashboard-grid .right-pane .personal-details {
+  padding-left: 4rem;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .personal-details
+  h3.personal-title {
+  margin-bottom: 2rem;
+  background-image: linear-gradient(90deg, #7dd56f 45%, #28b487);
+  background-clip: text;
+  color: transparent;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .personal-details
+  form.form-personal {
+  max-width: 80%;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .personal-details
+  form.form-personal
+  .form-personal-group {
+  margin-bottom: 2.5rem;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .personal-details
+  form.form-personal
+  .form-personal-group
+  label {
+  display: block;
+  /* color: #777; */
+  color: #fff;
+  font-family: "FiraSans-Medium";
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .personal-details
+  form.form-personal
+  .form-personal-group
+  input {
+  display: block;
+  background-color: #202020;
+  color: #bbb;
+  width: 100%;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .personal-details
+  form.form-personal
+  button.personal-btn {
+  display: block;
+  max-width: 41%;
+  margin-left: auto;
+  background-color: #dc143c;
+  border: none;
+  text-transform: uppercase;
+  margin-block: 1.5rem 0.7rem;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .personal-details
+  form.form-personal
+  button.personal-btn:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(220, 20, 60, 0.25);
+}
+section#dashboard .dashboard-grid .right-pane hr {
+  margin-block: 6.5rem;
+  /* color: rgba(112, 112, 112, 0.35); */
+  color: #202020;
+}
+section#dashboard .dashboard-grid .right-pane .change-pwd {
+  padding-left: 4rem;
+}
+section#dashboard .dashboard-grid .right-pane .change-pwd h3.pwd-title {
+  margin-bottom: 2rem;
+  background-image: linear-gradient(90deg, #7dd56f 45%, #28b487);
+  background-clip: text;
+  color: transparent;
+}
+section#dashboard .dashboard-grid .right-pane .change-pwd form.form-pwd {
+  max-width: 80%;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .change-pwd
+  form.form-pwd
+  .form-pwd-group {
+  margin-bottom: 2.5rem;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .change-pwd
+  form.form-pwd
+  .form-pwd-group
+  label {
+  display: block;
+  /* color: #777; */
+  color: #fff;
+  font-family: "FiraSans-Medium";
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .change-pwd
+  form.form-pwd
+  .form-pwd-group
+  input {
+  display: block;
+  /* background-color: #f2f2f2; */
+  background-color: #202020;
+  color: #bbb;
+  width: 100%;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .change-pwd
+  form.form-pwd
+  button.pwd-btn {
+  display: block;
+  max-width: 41%;
+  margin-left: auto;
+  background-color: #dc143c;
+  border: none;
+  text-transform: uppercase;
+  margin-block: 1.5rem 0.7rem;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .change-pwd
+  form.form-pwd
+  button.pwd-btn:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(220, 20, 60, 0.25);
+}
+section#dashboard .dashboard-grid .right-pane .delivery-details {
+  padding-left: 4rem;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .delivery-details
+  h3.delivery-title {
+  margin-bottom: 2rem;
+  background-image: linear-gradient(90deg, #7dd56f 45%, #28b487);
+  background-clip: text;
+  color: transparent;
+}
+section#dashboard .dashboard-grid .right-pane .delivery-details form.delivery {
+  max-width: 80%;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .delivery-details
+  form.delivery
+  .delivery-form-group {
+  margin-bottom: 2.5rem;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .delivery-details
+  form.delivery
+  .delivery-form-group
+  label {
+  display: block;
+  /* color: #777; */
+  color: #fff;
+  font-family: "FiraSans-Medium";
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .delivery-details
+  form.delivery
+  .delivery-form-group
+  input {
+  display: block;
+  /* background-color: #f2f2f2; */
+  background-color: #202020;
+  color: #bbb;
+  width: 100%;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .delivery-details
+  form.delivery
+  button.delivery-btn {
+  display: block;
+  max-width: 41%;
+  margin-left: auto;
+  background-color: #dc143c;
+  border: none;
+  text-transform: uppercase;
+  margin-block: 1.5rem 0.7rem;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .delivery-details
+  form.delivery
+  button.delivery-btn:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(220, 20, 60, 0.25);
+}
+section#dashboard .dashboard-grid .right-pane .payment-details {
+  padding-left: 4rem;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .payment-details
+  h3.payment-title {
+  margin-bottom: 2rem;
+  background-image: linear-gradient(90deg, #7dd56f 45%, #28b487);
+  background-clip: text;
+  color: transparent;
+}
+section#dashboard .dashboard-grid .right-pane .payment-details form.cc-form {
+  max-width: 80%;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .payment-details
+  form.cc-form
+  .cc-form-group {
+  margin-bottom: 2.5rem;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .payment-details
+  form.cc-form
+  .cc-form-group
+  label {
+  display: block;
+  color: #777;
+  font-family: "FiraSans-Medium";
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .payment-details
+  form.cc-form
+  .cc-form-group
+  input {
+  display: block;
+  /* background-color: #f2f2f2; */
+  background-color: #202020;
+  color: #bbb;
+  width: 100%;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .payment-details
+  form.cc-form
+  button.cc-form-btn {
+  display: block;
+  max-width: 41%;
+  margin-left: auto;
+  background-color: #dc143c;
+  border: none;
+  text-transform: uppercase;
+  margin-block: 1.5rem 0.7rem;
+}
+section#dashboard
+  .dashboard-grid
+  .right-pane
+  .payment-details
+  form.cc-form
+  button.cc-form-btn:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(220, 20, 60, 0.25);
+}
+
+@media screen and (max-width: 900px) {
+  section#dashboard .dashboard-grid .left-pane {
+    padding-left: 2.2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#dashboard .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  section#dashboard .dashboard-grid .left-pane {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  section#dashboard .dashboard-grid {
+    margin-inline: auto;
+  }
+  section#dashboard
+    .dashboard-grid
+    .right-pane
+    .personal-details
+    form.form-personal
+    button.personal-btn,
+  section#dashboard
+    .dashboard-grid
+    .right-pane
+    .change-pwd
+    form.form-pwd
+    button.pwd-btn,
+  section#dashboard
+    .dashboard-grid
+    .right-pane
+    .delivery-details
+    form.delivery
+    button.delivery-btn,
+  section#dashboard
+    .dashboard-grid
+    .right-pane
+    .payment-details
+    form.cc-form
+    button.cc-form-btn {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}

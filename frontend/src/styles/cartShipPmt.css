@@ -1,0 +1,366 @@
+section#ship-pmt-summary {
+  padding-inline: clamp(2rem, 5vw, 7rem);
+  display: grid;
+  grid-template-columns: 61% 39%;
+  column-gap: 2rem;
+}
+section#ship-pmt-summary .details section.shipping-details h2.shipping-title {
+  color: #d7d8d7;
+  margin-bottom: 2.5rem;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container {
+  width: 45vw;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  input {
+  background-color: #0d0d0d;
+  color: #b4b4b4;
+  margin-bottom: 25px;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  input#fName,
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  input#lName,
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  select#city,
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  input#contact {
+  display: inline-block;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  input#address {
+  display: block;
+  width: 100%;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  input#fName,
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  select#city {
+  margin-right: 9%;
+  width: 45%;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  input#lName,
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  input#contact {
+  width: 45%;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  select#city {
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 1.5rem;
+  color: #676767;
+  background-color: #0d0d0d;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 8px 9px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="%2331343a;" /></svg>');
+  background-position: right 5px top 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 30px;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  select#city:focus {
+  border: 1px solid #262626;
+  outline: none;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  .delivery-group {
+  margin-block: 2rem;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  .delivery-group:nth-child(7) {
+  margin-bottom: 4rem;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  .delivery-group
+  input#freeDelivery,
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  .delivery-group
+  input#premiumDelivery {
+  display: none;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  .delivery-group
+  label {
+  position: relative;
+  cursor: pointer;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  .delivery-group
+  label::before {
+  content: "";
+  border: 2px solid #a0a0a0;
+  border: 2px solid #676767;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: -5.5px 20px;
+  margin-left: 0;
+  border-radius: 50%;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  .delivery-group
+  label::after {
+  content: "";
+  display: inline-block;
+  background-color: rgba(160, 160, 160, 0);
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 3.5px;
+  left: 5px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  form.shipping-form-container
+  .delivery-group
+  input[type="radio"]:checked
+  + label::after {
+  background-color: #a0a0a0;
+  background-color: #676767;
+}
+section#ship-pmt-summary .details section.shipping-details button.delivery-btn {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  background-color: #dc143c;
+  border: none;
+  text-transform: uppercase;
+  margin-block: 1.5rem 0.7rem;
+}
+section#ship-pmt-summary
+  .details
+  section.shipping-details
+  button.delivery-btn:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(220, 20, 60, 0.25);
+}
+section#ship-pmt-summary section.payment-details {
+  margin-top: 7rem;
+}
+section#ship-pmt-summary section.payment-details form.cc-form {
+  width: 45vw;
+}
+section#ship-pmt-summary section.payment-details form.cc-form button.cc-btn {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  background-color: #dc143c;
+  border: none;
+  text-transform: uppercase;
+  margin-block: 1.5rem 0.7rem;
+}
+section#ship-pmt-summary
+  section.payment-details
+  form.cc-form
+  button.cc-btn:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(220, 20, 60, 0.25);
+}
+
+.order-summary {
+  background-color: #0d0d0d;
+  border-radius: 5px;
+  height: max-content;
+}
+.order-summary .summary-card {
+  padding-inline: 2rem;
+}
+.order-summary .summary-card h4.summary-title {
+  margin-block: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d7d8d7;
+}
+.order-summary .summary-card p.subtotal,
+.order-summary .summary-card p.subtotal-amt,
+.order-summary .summary-card p.delivery,
+.order-summary .summary-card p.delivery-amt,
+.order-summary .summary-card p.tax,
+.order-summary .summary-card p.tax-amt,
+.order-summary .summary-card p.total,
+.order-summary .summary-card p.total-amt {
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
+  color: #d7d8d7;
+}
+.order-summary .summary-card p.subtotal,
+.order-summary .summary-card p.subtotal-amt {
+  margin-top: 0;
+}
+.order-summary .summary-card .summary-subtotal-flex,
+.order-summary .summary-card .summary-delivery-flex,
+.order-summary .summary-card .summary-tax-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.order-summary .summary-card p.delivery-amt {
+  color: #20b830;
+  font-family: "Lato-Bold";
+}
+.order-summary .summary-card hr {
+  color: #202020;
+}
+.order-summary .summary-card .summary-total-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.order-summary .summary-card .summary-total-flex p.total,
+.order-summary .summary-card .summary-total-flex p.total-amt {
+  font-family: "Lato-Bold";
+  margin-top: 0;
+}
+.order-summary .summary-card .summary-btn button {
+  margin-block: 2.5rem;
+  width: 100%;
+  background-color: #20b830;
+  border: none;
+  text-transform: uppercase;
+}
+.order-summary .summary-card .summary-btn button:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(32, 184, 48, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+  section#ship-pmt-summary {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  section#ship-pmt-summary
+    .details
+    section.shipping-details
+    form.shipping-form-container,
+  section#ship-pmt-summary section.payment-details form.cc-form {
+    width: 100%;
+  }
+  section#ship-pmt-summary section.order-summary {
+    margin-top: 7rem;
+    width: 85%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section#ship-pmt-summary {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  section#ship-pmt-summary
+    .details
+    section.shipping-details
+    form.shipping-form-container
+    .delivery-group
+    label
+    span {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  section#ship-pmt-summary
+    .details
+    section.shipping-details
+    form.shipping-form-container
+    .delivery-group
+    label::before {
+    margin-right: 1rem;
+  }
+
+  section#ship-pmt-summary
+    .details
+    section.shipping-details
+    form.shipping-form-container
+    button.delivery-btn {
+    width: 100%;
+  }
+  section#ship-pmt-summary section.payment-details form.cc-form button.cc-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  section#ship-pmt-summary
+    .details
+    section.shipping-details
+    form.shipping-form-container
+    .delivery-group
+    label::after {
+    top: 2.5px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  section#ship-pmt-summary section.order-summary {
+    max-width: 33rem;
+  }
+}

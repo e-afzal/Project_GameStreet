@@ -1,0 +1,192 @@
+section#product-content {
+  padding-inline: clamp(2rem, 5vw, 7rem);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section#product-content p {
+  text-align: left;
+}
+section#product-content .product-details .product-brief {
+  width: clamp(60%, 29vw, 65%);
+  margin-bottom: 10rem;
+}
+section#product-content .product-details .product-brief hr {
+  margin-block: clamp(1rem, 3vw, 3rem);
+  color: #202020;
+}
+section#product-content .product-details .product-brief h4.product-price {
+  color: #20b830;
+  margin-top: 1rem;
+}
+section#product-content .product-details .product-brief h4.product-stock {
+  margin-top: 5px;
+  font-size: clamp(1.45rem, 2vw, 1.7rem);
+}
+
+section#product-content .product-details .product-brief h4.product-stock span {
+  color: #20b830;
+}
+
+.product-quantity > h5:nth-child(1) {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.45rem, 2vw, 1.7rem);
+}
+
+select#quantity {
+  font-family: "FiraSans-Medium", sans-serif;
+  font-size: 1.5rem;
+  color: #f9f6f2;
+  background-color: #262626;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="%2331343a;"  /></svg>');
+  background-position: right 5px top 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 30px;
+}
+#quantity:focus {
+  outline: none;
+}
+select#quantity option {
+  color: #fff;
+}
+
+section#product-content .product-details .product-brief form.cart-form h5 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.45rem, 2vw, 1.7rem);
+}
+section#product-content
+  .product-details
+  .product-brief
+  form.cart-form
+  div.form-group:nth-child(2)
+  > label:nth-child(4) {
+  margin-left: 3rem;
+}
+section#product-content
+  .product-details
+  .product-brief
+  form.cart-form
+  .form-group {
+  display: flex;
+}
+section#product-content
+  .product-details
+  .product-brief
+  form.cart-form
+  .form-group
+  label {
+  font-size: clamp(1.35rem, 1.5vw, 1.6rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  width: 9.5rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+section#product-content
+  .product-details
+  .product-brief
+  form.cart-form
+  .form-group
+  input[type="radio"] {
+  display: none;
+}
+section#product-content
+  .product-details
+  .product-brief
+  form.cart-form
+  .form-group
+  input[type="radio"]:checked
+  + label {
+  background-color: #fff;
+  color: #151515;
+  box-shadow: 0 5px 45px rgba(255, 255, 255, 0.2);
+}
+section#product-content .product-details .product-brief form.cart-form button {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #20b830;
+  border: none;
+  text-transform: uppercase;
+}
+section#product-content
+  .product-details
+  .product-brief
+  form.cart-form
+  button:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(32, 184, 48, 0.25);
+}
+
+section#product-content
+  .product-details
+  .product-brief
+  form.cart-form
+  button:disabled:hover {
+  box-shadow: 0px 0px 45px rgba(220, 20, 60, 0.25);
+}
+
+section#product-content .product-details .about-product p.about-description {
+  color: #b4b4b4;
+  margin-top: 5px;
+}
+section#product-content .product-details .product-features {
+  margin-top: 6.5rem;
+}
+section#product-content
+  .product-details
+  .product-features
+  p.features-description {
+  color: #b4b4b4;
+  margin-top: 5px;
+}
+
+section#product-content .product-gallery h1 {
+  margin-bottom: 1.5rem;
+}
+
+section#product-content .product-gallery {
+  justify-self: center;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  section#product-content {
+    grid-template-columns: 1fr;
+  }
+  section#product-content .product-details {
+    order: 2;
+    margin-top: 2rem;
+  }
+  section#product-content .product-details .product-features {
+    margin-top: 5.5rem;
+  }
+  section#product-content .product-gallery {
+    order: 1;
+  }
+  section#product-content .product-gallery h1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  section#product-content .product-details .product-brief {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  section#product-content .product-details .product-features {
+    margin-top: 5rem;
+  }
+}

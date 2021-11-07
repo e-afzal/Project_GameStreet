@@ -1,0 +1,105 @@
+#modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#modal .modal-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.95);
+}
+#modal .modal-container {
+  z-index: 2;
+  padding-top: 1rem;
+  padding-inline: clamp(2rem, 5vw, 4rem);
+  border-radius: 1rem;
+  height: max-content;
+  width: 50rem;
+  background-color: #0d0d0d;
+}
+#modal .modal-container .modal-img {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+  background-color: rebeccapurple;
+  position: relative;
+}
+#modal .modal-container .modal-img img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+#modal .modal-container .modal-content h2 {
+  text-align: center;
+}
+#modal .modal-container .modal-content p {
+  margin-top: 0.7rem;
+  text-align: center;
+  font-size: clamp(1.45rem, 2vw, 1.7rem);
+  width: 30rem;
+  margin-inline: auto;
+}
+#modal .modal-container .modal-content .button-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#modal .modal-container .modal-content .button-flex button.home,
+#modal .modal-container .modal-content .button-flex button.dashboard {
+  margin-block: 2.5rem;
+  padding: 0;
+  width: 45%;
+  background-color: #20b830;
+  border: none;
+  text-transform: uppercase;
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
+}
+#modal .modal-container .modal-content .button-flex button.home:hover,
+#modal .modal-container .modal-content .button-flex button.dashboard:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(32, 184, 48, 0.25);
+}
+
+#modal .modal-container .modal-content .button-flex button.home a,
+#modal .modal-container .modal-content .button-flex button.dashboard a {
+  display: inline-block;
+  padding: 1.2rem 1.5rem;
+}
+
+@media screen and (max-width: 560px) {
+  #modal .modal-container {
+    border-radius: 0;
+    padding-inline: 1.5rem;
+    padding-bottom: 0.1rem;
+  }
+  #modal .modal-container .modal-img {
+    width: 20rem;
+    height: 20rem;
+  }
+  #modal .modal-container .modal-content {
+    width: 100%;
+  }
+  #modal .modal-container .modal-content .button-flex {
+    display: block;
+  }
+  #modal .modal-container .modal-content .button-flex button.home,
+  #modal .modal-container .modal-content .button-flex button.dashboard {
+    display: block;
+    margin-inline: auto;
+    width: 21.5rem;
+  }
+}

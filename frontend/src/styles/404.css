@@ -1,0 +1,82 @@
+section#notFoundContainer {
+  /* margin-top: 20rem; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 75rem;
+}
+section#notFoundContainer img.section-bgd {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  max-width: 1260px;
+  right: 0;
+}
+section#notFoundContainer .content-404 {
+  margin-left: clamp(2rem, 5vw, 7rem);
+  position: relative;
+  width: clamp(43rem, 32vw, 48rem);
+}
+section#notFoundContainer .content-404 img.torch-img {
+  display: none;
+}
+section#notFoundContainer .content-404 h1 {
+  font-size: clamp(7.5rem, 16vw, 17rem);
+  background-image: linear-gradient(90deg, #15002b 5%, #2e006c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Carumba-Regular";
+}
+section#notFoundContainer .content-404 p {
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  text-align: left;
+  margin-block: -1vh 2rem;
+  margin-left: 0.5vw;
+  color: #d7d8d7;
+}
+section#notFoundContainer .content-404 .button-flex button {
+  margin-left: 0.5vw;
+  width: 48%;
+  background-color: #20b830;
+  border: none;
+  text-transform: uppercase;
+  padding: 0;
+}
+section#notFoundContainer .content-404 .button-flex button a {
+  display: inline-block;
+  width: 100%;
+  padding-block: 1.2rem;
+}
+section#notFoundContainer .content-404 .button-flex button:nth-child(2) {
+  margin-left: 2%;
+}
+section#notFoundContainer .content-404 .button-flex button:hover {
+  color: #fff;
+  box-shadow: 0px 0px 45px rgba(32, 184, 48, 0.4);
+}
+
+@media screen and (max-width: 650px) {
+  section#notFoundContainer {
+    margin-block: 5rem;
+    height: 530px;
+  }
+  section#notFoundContainer img.section-bgd {
+    display: none;
+  }
+  section#notFoundContainer .content-404 {
+    width: 100%;
+    margin-inline: clamp(2rem, 5vw, 7rem);
+  }
+  section#notFoundContainer .content-404 img.torch-img {
+    width: 100%;
+    display: block;
+  }
+  section#notFoundContainer .content-404 h1 {
+    text-align: center;
+  }
+  section#notFoundContainer .content-404 p {
+    text-align: center;
+    margin-left: 0;
+  }
+}

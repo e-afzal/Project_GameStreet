@@ -798,8 +798,9 @@ section#search-grid .filter-flex {
   }
   section#search-grid
     .filter-sidebar-menu
-    .filter-menu-overlay
+    .filter-menu-overlay.active
     .filter-product-type
+    .accordion-general-mobile.active
     .filter-options
     .input-group
     input[type="radio"]:checked

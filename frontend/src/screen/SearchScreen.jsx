@@ -218,8 +218,8 @@ const SearchScreen = ({ location }) => {
             </div>
             <div className="filter-main-title">
               <h4>Filter Options</h4>
-              <Link
-                to="/products/search"
+              <a
+                href="/products/search"
                 style={{
                   marginLeft: "auto",
                   fontSize: "1.4rem",
@@ -227,7 +227,7 @@ const SearchScreen = ({ location }) => {
                 }}
               >
                 RESET
-              </Link>
+              </a>
             </div>
             <hr />
 

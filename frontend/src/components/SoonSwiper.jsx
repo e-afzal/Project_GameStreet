@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 // PACKAGE
 import SwiperCore from "swiper/core";
@@ -41,33 +40,33 @@ const SoonSwiper = () => {
         loop={true}
       >
         <SwiperSlide>
-          <Link to="/products/games/6121b881fb1d81202c1cb212" className="soon">
+          <a href="/products/games/6121b881fb1d81202c1cb212" className="soon">
             <img src={dyingLight} alt="Dying Light 2" className="soon" />
-          </Link>
+          </a>
         </SwiperSlide>
 
         <SwiperSlide>
-          <Link to="/products/games/6121b8878334f437d07b20b1" className="soon">
+          <a href="/products/games/6121b8878334f437d07b20b1" className="soon">
             <img src={forza} alt="Forza Horizon 5" className="soon" />
-          </Link>
+          </a>
         </SwiperSlide>
 
         <SwiperSlide>
-          <Link to="/products/games/6121b6ccdce536120423bb49" className="soon">
+          <a href="/products/games/6121b6ccdce536120423bb49" className="soon">
             <img src={fifa} alt="Fifa 22" className="soon" />
-          </Link>
+          </a>
         </SwiperSlide>
 
         <SwiperSlide>
-          <Link to="/products/games/6121b88cb0d1412c6c5d988a" className="soon">
+          <a href="/products/games/6121b88cb0d1412c6c5d988a" className="soon">
             <img src={mario} alt="Mario Golf - Super Rush" className="soon" />
-          </Link>
+          </a>
         </SwiperSlide>
 
         <SwiperSlide>
-          <Link to="/products/games/6121b8ca0df85739e87895ed" className="soon">
+          <a href="/products/games/6121b8ca0df85739e87895ed" className="soon">
             <img src={nfl} alt="Madden NFL 22" className="soon" />
-          </Link>
+          </a>
         </SwiperSlide>
       </Swiper>
     </>

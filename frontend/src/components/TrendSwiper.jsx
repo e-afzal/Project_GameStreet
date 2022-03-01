@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 // PACKAGES
 import SwiperCore from "swiper/core";
@@ -46,104 +45,104 @@ const TrendSwiper = () => {
         className="trend-container"
       >
         <SwiperSlide>
-          <Link to="/products/games/610899ab7be4872050e609fc" className="trend">
+          <a href="/products/games/610899ab7be4872050e609fc" className="trend">
             <img
               src={souls}
               alt="Demon's Souls"
               // style={{ width: "75%" }}
               className="trend"
             />
-          </Link>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Link to="/products/games/610899ab7be4872050e60a03" className="trend">
+          <a href="/products/games/610899ab7be4872050e60a03" className="trend">
             <img
               src={flight}
               alt="Microsoft Flight Simulator"
               // style={{ width: "75%" }}
               className="trend"
             />
-          </Link>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Link to="/products/games/610899ab7be4872050e609fa" className="trend">
+          <a href="/products/games/610899ab7be4872050e609fa" className="trend">
             <img
               src={gow}
               alt="God of War"
               // style={{ width: "75%" }}
               className="trend"
             />
-          </Link>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Link to="/products/games/612ec67751895f450c4f8a3e" className="trend">
+          <a href="/products/games/612ec67751895f450c4f8a3e" className="trend">
             <img
               src={ratchet}
               alt="Ratchet & Clank: Rift Apart"
               className="trend"
               // style={{ width: "75%" }}
             />
-          </Link>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Link to="/products/games/610899ab7be4872050e609fe" className="trend">
+          <a href="/products/games/610899ab7be4872050e609fe" className="trend">
             <img
               src={redemption}
               alt="Red Dead Redemption"
               // style={{ width: "75%" }}
               className="trend"
             />
-          </Link>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Link to="/products/games/610899ab7be4872050e60a0b" className="trend">
+          <a href="/products/games/610899ab7be4872050e60a0b" className="trend">
             <img
               src={mario}
               alt="Super Mario Odyssey "
               // style={{ width: "75%" }}
               className="trend"
             />
-          </Link>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Link to="/products/games/610899ab7be4872050e609fb" className="trend">
+          <a href="/products/games/610899ab7be4872050e609fb" className="trend">
             <img
               src={lou}
               alt="The Last of Us 2"
               // style={{ width: "75%" }}
               className="trend"
             />
-          </Link>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Link to="/products/games/610899ab7be4872050e60a0a" className="trend">
+          <a href="/products/games/610899ab7be4872050e60a0a" className="trend">
             <img
               src={zelda}
               alt="Zelda: Breath of the Wild"
               // style={{ width: "75%" }}
               className="trend"
             />
-          </Link>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Link to="/products/games/6121b9142b8da63678acb9df" className="trend">
+          <a href="/products/games/6121b9142b8da63678acb9df" className="trend">
             <img
               src={uncharted}
               alt="Uncharted 4"
               // style={{ width: "75%" }}
               className="trend"
             />
-          </Link>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Link to="/products/games/610899ab7be4872050e609fd" className="trend">
+          <a href="/products/games/610899ab7be4872050e609fd" className="trend">
             <img
               src={witcher}
               alt="Witcher 3: GOTY"
               // style={{ width: "75%" }}
               className="trend"
             />
-          </Link>
+          </a>
         </SwiperSlide>
       </Swiper>
     </>
